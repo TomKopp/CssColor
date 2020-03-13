@@ -1,3 +1,5 @@
+dependencies:
+  '@witzbould/utils': 2.1.0
 devDependencies:
   '@types/node': 13.9.1
   babel-eslint: 10.1.0_eslint@6.8.0
@@ -94,6 +96,10 @@ packages:
     dev: true
     resolution:
       integrity: sha512-E6M6N0blf/jiZx8Q3nb0vNaswQeEyn0XlupO+xN6DtJ6r6IT4nXrTry7zhIfYvFCl3/8Cu6WIysmUBKiqV0bqQ==
+  /@witzbould/utils/2.1.0:
+    dev: false
+    resolution:
+      integrity: sha512-gu0FrOjzxYCqum2f3LURysiVSmCodSdocMgUNORRQApKC28GNtRoCS8bs4YxOXWJm04/JGuSLRQp0tGyWdzv8A==
   /acorn-jsx/5.2.0_acorn@7.1.1:
     dependencies:
       acorn: 7.1.1
@@ -1452,6 +1458,7 @@ packages:
       integrity: sha512-/lg70HAjtkUgWPVZhZcm+T4hkL8Zbtp1nFNOn3lRrxnlv50SRBv7cR7RqR+GMsd3hUXy9hWBo4CHTbFTcOYwig==
 specifiers:
   '@types/node': ^13.9.1
+  '@witzbould/utils': ^2.1.0
   babel-eslint: ^10.1.0
   eslint: ^6.8.0
   eslint-plugin-import: ^2.20.1
