@@ -95,13 +95,13 @@ module.exports = {
 		"no-extend-native": "error",
 		"no-extra-bind": "error",
 		"no-extra-label": "error",
-		"no-extra-parens": ["error", "all", {"returnAssign": false }],
+		"no-extra-parens": ["error", "all", {"returnAssign": false, "enforceForArrowConditionals": false }],
 		"no-floating-decimal": "error",
 		"no-implicit-coercion": "error",
 		"no-implicit-globals": "error",
 		"no-implied-eval": "error",
 		"no-inline-comments": "error",
-		"no-invalid-this": "error",
+		// "no-invalid-this": "error", this is more error prone, than it's worth
 		"no-iterator": "error",
 		"no-label-var": "error",
 		"no-labels": "error",
@@ -213,7 +213,8 @@ module.exports = {
 				"augments": {
 					"message": "@extends is to be used over @augments as it is more evocative of classes than @augments",
 					"replacement": "extends"
-				}
+				},
+				"returns": "return"
 			}
 		}
 	}
