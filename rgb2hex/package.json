@@ -1,0 +1,26 @@
+{
+  "name": "@colorconvert/rgb2hex",
+  "version": "0.0.0",
+  "description": "Converts rgb colors to hex",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "lint": "eslint -f=table \"*.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "color",
+    "convert",
+    "rgb",
+    "hex"
+  ],
+  "author": "Tom Kopp",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^13.9.1",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.8.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jsdoc": "^22.0.1"
+  }
+}
