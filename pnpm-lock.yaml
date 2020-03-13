@@ -1,11 +1,36 @@
-dependencies:
-  '@witzbould/utils': 2.1.0
-devDependencies:
-  '@types/node': 13.9.1
-  babel-eslint: 10.1.0_eslint@6.8.0
-  eslint: 6.8.0
-  eslint-plugin-import: 2.20.1_eslint@6.8.0
-  eslint-plugin-jsdoc: 22.0.1_eslint@6.8.0
+importers:
+  packages/hex2rgb:
+    dependencies:
+      '@witzbould/utils': 2.1.0
+    devDependencies:
+      '@types/node': 13.9.1
+      babel-eslint: 10.1.0_eslint@6.8.0
+      eslint: 6.8.0
+      eslint-plugin-import: 2.20.1_eslint@6.8.0
+      eslint-plugin-jsdoc: 22.0.1_eslint@6.8.0
+    specifiers:
+      '@types/node': ^13.9.1
+      '@witzbould/utils': ^2.1.0
+      babel-eslint: ^10.1.0
+      eslint: ^6.8.0
+      eslint-plugin-import: ^2.20.1
+      eslint-plugin-jsdoc: ^22.0.1
+  packages/rgb2hex:
+    dependencies:
+      '@witzbould/utils': 2.1.0
+    devDependencies:
+      '@types/node': 13.9.1
+      babel-eslint: 10.1.0_eslint@6.8.0
+      eslint: 6.8.0
+      eslint-plugin-import: 2.20.1_eslint@6.8.0
+      eslint-plugin-jsdoc: 22.0.1_eslint@6.8.0
+    specifiers:
+      '@types/node': ^13.9.1
+      '@witzbould/utils': ^2.1.0
+      babel-eslint: ^10.1.0
+      eslint: ^6.8.0
+      eslint-plugin-import: ^2.20.1
+      eslint-plugin-jsdoc: ^22.0.1
 lockfileVersion: 5.1
 packages:
   /@babel/code-frame/7.8.3:
@@ -1456,10 +1481,3 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha512-/lg70HAjtkUgWPVZhZcm+T4hkL8Zbtp1nFNOn3lRrxnlv50SRBv7cR7RqR+GMsd3hUXy9hWBo4CHTbFTcOYwig==
-specifiers:
-  '@types/node': ^13.9.1
-  '@witzbould/utils': ^2.1.0
-  babel-eslint: ^10.1.0
-  eslint: ^6.8.0
-  eslint-plugin-import: ^2.20.1
-  eslint-plugin-jsdoc: ^22.0.1
