@@ -1,32 +1,38 @@
 importers:
-  packages/hex2rgb:
-    dependencies:
-      '@witzbould/utils': 2.1.0
+  .:
     devDependencies:
-      '@types/node': 13.9.1
       babel-eslint: 10.1.0_eslint@6.8.0
       eslint: 6.8.0
       eslint-plugin-import: 2.20.1_eslint@6.8.0
       eslint-plugin-jsdoc: 22.0.1_eslint@6.8.0
     specifiers:
-      '@types/node': ^13.9.1
-      '@witzbould/utils': ^2.1.0
+      babel-eslint: ^10.1.0
+      eslint: ^6.8.0
+      eslint-plugin-import: ^2.20.1
+      eslint-plugin-jsdoc: ^22.0.1
+  packages/hex2rgb:
+    devDependencies:
+      babel-eslint: 10.1.0_eslint@6.8.0
+      eslint: 6.8.0
+      eslint-plugin-import: 2.20.1_eslint@6.8.0
+      eslint-plugin-jsdoc: 22.0.1_eslint@6.8.0
+    specifiers:
       babel-eslint: ^10.1.0
       eslint: ^6.8.0
       eslint-plugin-import: ^2.20.1
       eslint-plugin-jsdoc: ^22.0.1
   packages/rgb2hex:
     dependencies:
-      '@witzbould/utils': 2.1.0
+      '@witzbould/utils-map-value-range': 1.0.0
+      '@witzbould/utils-u-byte2hex': 1.0.0
     devDependencies:
-      '@types/node': 13.9.1
       babel-eslint: 10.1.0_eslint@6.8.0
       eslint: 6.8.0
       eslint-plugin-import: 2.20.1_eslint@6.8.0
       eslint-plugin-jsdoc: 22.0.1_eslint@6.8.0
     specifiers:
-      '@types/node': ^13.9.1
-      '@witzbould/utils': ^2.1.0
+      '@witzbould/utils-map-value-range': ^1.0.0
+      '@witzbould/utils-u-byte2hex': ^1.0.0
       babel-eslint: ^10.1.0
       eslint: ^6.8.0
       eslint-plugin-import: ^2.20.1
@@ -117,14 +123,14 @@ packages:
     dev: true
     resolution:
       integrity: sha512-rr+OQyAjxze7GgWrSaJwydHStIhHq2lvY3BOC2Mj7KnzI7XK0Uw1TOOdI9lDoajEbSWLiYgoo4f1R51erQfhPQ==
-  /@types/node/13.9.1:
-    dev: true
-    resolution:
-      integrity: sha512-E6M6N0blf/jiZx8Q3nb0vNaswQeEyn0XlupO+xN6DtJ6r6IT4nXrTry7zhIfYvFCl3/8Cu6WIysmUBKiqV0bqQ==
-  /@witzbould/utils/2.1.0:
+  /@witzbould/utils-map-value-range/1.0.0:
     dev: false
     resolution:
-      integrity: sha512-gu0FrOjzxYCqum2f3LURysiVSmCodSdocMgUNORRQApKC28GNtRoCS8bs4YxOXWJm04/JGuSLRQp0tGyWdzv8A==
+      integrity: sha512-m7tdPH4hC1l/oUgVCilaOp3yaYrMd9zpVL46P/9IOfREAW/23Sgl5j4NAxu3PPjH1PaCgz8iay6yKm3tfSUwmg==
+  /@witzbould/utils-u-byte2hex/1.0.0:
+    dev: false
+    resolution:
+      integrity: sha512-Kwz9zjjNZLUB9Alt9hrklwON8udrZjhQeMZy6R0r3LSLfjpGvVTC7UxfzT/sPK5/ntfDcjEZ5T7JDZZJhvfq3A==
   /acorn-jsx/5.2.0_acorn@7.1.1:
     dependencies:
       acorn: 7.1.1
@@ -530,7 +536,7 @@ packages:
       levn: 0.3.0
       lodash: 4.17.15
       minimatch: 3.0.4
-      mkdirp: 0.5.1
+      mkdirp: 0.5.3
       natural-compare: 1.4.0
       optionator: 0.8.3
       progress: 2.0.3
@@ -946,17 +952,18 @@ packages:
     dev: true
     resolution:
       integrity: sha512-yJHVQEhyqPLUTgt9B83PXu6W3rx4MvvHvSUvToogpwoGDOUQ+yDrR0HRot+yOCdCO7u4hX3pWft6kWBBcqh0UA==
-  /minimist/0.0.8:
+  /minimist/1.2.5:
     dev: true
     resolution:
-      integrity: sha1-hX/Kv8M5fSYluCKCYuhqp6ARsF0=
-  /mkdirp/0.5.1:
+      integrity: sha512-FM9nNUYrRBAELZQT3xeZQ7fmMOBg6nWNmJKTcgsJeaLstP/UODVpGsr5OhXhhXg6f+qtJ8uiZ+PUxkDWcgIXLw==
+  /mkdirp/0.5.3:
     dependencies:
-      minimist: 0.0.8
+      minimist: 1.2.5
+    deprecated: Legacy versions of mkdirp are no longer supported. Please update to mkdirp 1.x. (Note that the API surface has changed to use Promises in 1.x.)
     dev: true
     hasBin: true
     resolution:
-      integrity: sha1-MAV0OOrGz3+MR2fzhkjWaX11yQM=
+      integrity: sha512-P+2gwrFqx8lhew375MQHHeTlY8AuOJSrGf0R5ddkEndUkmwpgUob/vQuBD1V22/Cw1/lJr4x+EjllSezBThzBg==
   /ms/2.0.0:
     dev: true
     resolution:
@@ -1475,7 +1482,7 @@ packages:
       integrity: sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=
   /write/1.0.3:
     dependencies:
-      mkdirp: 0.5.1
+      mkdirp: 0.5.3
     dev: true
     engines:
       node: '>=4'
