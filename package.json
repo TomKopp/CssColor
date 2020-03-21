@@ -1,0 +1,28 @@
+{
+  "name": "colorconvert",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "keywords": [
+    "color",
+    "convert",
+    "rgb",
+    "hex"
+  ],
+  "author": "Tom Kopp",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.8.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jsdoc": "^22.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/witzbould/ColorConvert.git"
+  },
+  "bugs": {
+    "url": "https://github.com/witzbould/ColorConvert/issues"
+  },
+  "homepage": "https://github.com/witzbould/ColorConvert#readme"
+}
