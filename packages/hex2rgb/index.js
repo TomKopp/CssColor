@@ -4,7 +4,7 @@ import { mapValueRange } from '@witzbould/utils-map-value-range';
  * Converts 3-4 digit hex string to array of bytes
  *
  * @param {string} str Hex string
- * @return {number[]} array of chanels in bytes
+ * @return {number[]} Array of chanels in bytes
  */
 const shortHex2numArr = (str) => {
 	const arr = [];
@@ -18,7 +18,7 @@ const shortHex2numArr = (str) => {
  * Converts 6-8 digit hex string to array of bytes
  *
  * @param {string} str Hex string
- * @return {number[]} array of chanels in bytes
+ * @return {number[]} Array of chanels in bytes
  */
 const longHex2numArr = (str) => {
 	const arr = [];
@@ -28,7 +28,10 @@ const longHex2numArr = (str) => {
 	return arr;
 };
 
-const hex2numArr = (str) => (str.length === 3 || str.length === 4 ? shortHex2numArr(str) : longHex2numArr(str));
+const hex2numArr = (str) => (str.length === 3 || str.length === 4
+	? shortHex2numArr(str)
+	: longHex2numArr(str)
+);
 
 const render = ([
 	r
@@ -44,9 +47,9 @@ const render = ([
  *
  * @param {string} hexString Hexadecimal color string, can start with '#'
  * @param {object} [options] Object for format settings
- * @param {boolean} [options.CSSColorsLevel3=false] Use CSS Colors Level 3 functional notation
+ * @param {boolean} [options.CSSColorsLevel3=false] Use CSS Colors Level 3 functional notation (old one)
  * @param {boolean} [options.percent=false] Use percentage values
- * @return {string} The rgb value of the color in the form of rgb(r, g, b, a)
+ * @return {string} The rgb value of the color in the form of rgb(r g b[ / a]); rgb[a](r, g, b[, a]) if CSS Colors Level 3
  */
 export const hex2rgb = (hexString, { CSSColorsLevel3, percent } = { CSSColorsLevel3: false, percent: false }) => {
 	// Remove '#' if present
