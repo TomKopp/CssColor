@@ -23,16 +23,18 @@ importers:
       eslint-plugin-jsdoc: ^22.0.1
   packages/rgb2hex:
     dependencies:
+      '@witzbould/utils-clamp-value': 1.0.0
       '@witzbould/utils-map-value-range': 1.0.0
-      '@witzbould/utils-u-byte2hex': 1.0.0
+      '@witzbould/utils-number2hex': 1.0.0
     devDependencies:
       babel-eslint: 10.1.0_eslint@6.8.0
       eslint: 6.8.0
       eslint-plugin-import: 2.20.1_eslint@6.8.0
       eslint-plugin-jsdoc: 22.0.1_eslint@6.8.0
     specifiers:
+      '@witzbould/utils-clamp-value': ^1.0.0
       '@witzbould/utils-map-value-range': ^1.0.0
-      '@witzbould/utils-u-byte2hex': ^1.0.0
+      '@witzbould/utils-number2hex': ^1.0.0
       babel-eslint: ^10.1.0
       eslint: ^6.8.0
       eslint-plugin-import: ^2.20.1
@@ -123,14 +125,18 @@ packages:
     dev: true
     resolution:
       integrity: sha512-rr+OQyAjxze7GgWrSaJwydHStIhHq2lvY3BOC2Mj7KnzI7XK0Uw1TOOdI9lDoajEbSWLiYgoo4f1R51erQfhPQ==
+  /@witzbould/utils-clamp-value/1.0.0:
+    dev: false
+    resolution:
+      integrity: sha512-lIK9FwOSneG4iGAhalo0QQS4FvPjdN5txVj8bDsPI1zUtLFjWnQxLj9ILPpqJHim58AjScFsDVWhF4dNPYgWWw==
   /@witzbould/utils-map-value-range/1.0.0:
     dev: false
     resolution:
       integrity: sha512-m7tdPH4hC1l/oUgVCilaOp3yaYrMd9zpVL46P/9IOfREAW/23Sgl5j4NAxu3PPjH1PaCgz8iay6yKm3tfSUwmg==
-  /@witzbould/utils-u-byte2hex/1.0.0:
+  /@witzbould/utils-number2hex/1.0.0:
     dev: false
     resolution:
-      integrity: sha512-Kwz9zjjNZLUB9Alt9hrklwON8udrZjhQeMZy6R0r3LSLfjpGvVTC7UxfzT/sPK5/ntfDcjEZ5T7JDZZJhvfq3A==
+      integrity: sha512-efqkoyR9MkGdvrHAj1ilXaogEJCj8XnPW2qOr3hwy/HIK87on7puBbbjkjyLbW8G6Pv4xiKTeX+T+Uwyhg7Ueg==
   /acorn-jsx/5.2.0_acorn@7.1.1:
     dependencies:
       acorn: 7.1.1

@@ -22,8 +22,9 @@
     "eslint-plugin-jsdoc": "^22.0.1"
   },
   "dependencies": {
+    "@witzbould/utils-clamp-value": "^1.0.0",
     "@witzbould/utils-map-value-range": "^1.0.0",
-    "@witzbould/utils-u-byte2hex": "^1.0.0"
+    "@witzbould/utils-number2hex": "^1.0.0"
   },
   "repository": {
     "type": "git",
