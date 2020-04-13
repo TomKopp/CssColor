@@ -11,12 +11,15 @@ importers:
       eslint-plugin-import: ^2.20.1
       eslint-plugin-jsdoc: ^22.0.1
   packages/hex2rgb:
+    dependencies:
+      '@witzbould/utils-map-value-range': 1.0.0
     devDependencies:
       babel-eslint: 10.1.0_eslint@6.8.0
       eslint: 6.8.0
       eslint-plugin-import: 2.20.1_eslint@6.8.0
       eslint-plugin-jsdoc: 22.0.1_eslint@6.8.0
     specifiers:
+      '@witzbould/utils-map-value-range': ^1.0.0
       babel-eslint: ^10.1.0
       eslint: ^6.8.0
       eslint-plugin-import: ^2.20.1
