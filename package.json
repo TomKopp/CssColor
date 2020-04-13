@@ -1,5 +1,5 @@
 {
-  "name": "colorconvert",
+  "name": "csscolor",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -17,12 +17,13 @@
     "eslint-plugin-import": "^2.20.1",
     "eslint-plugin-jsdoc": "^22.0.1"
   },
+  "description": "Convert color from one space to another",
   "repository": {
     "type": "git",
-    "url": "https://github.com/witzbould/ColorConvert.git"
+    "url": "git+https://github.com/witzbould/CssColor.git"
   },
   "bugs": {
-    "url": "https://github.com/witzbould/ColorConvert/issues"
+    "url": "https://github.com/witzbould/CssColor/issues"
   },
-  "homepage": "https://github.com/witzbould/ColorConvert#readme"
+  "homepage": "https://github.com/witzbould/CssColor#readme"
 }
