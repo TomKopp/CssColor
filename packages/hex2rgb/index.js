@@ -43,13 +43,21 @@ const render = ([
 	: `rgb(${r} ${g} ${b}${a ? ` / ${a}` : ''})`);
 
 /**
- * Convert hex(a) values to rgb(a)
+ * Convert hex[a] values to rgb[a]
+ *
+ * @example
+ * ```js
+ * import { hex2rgb } from `@csscolor/hex2rgb`;
+ *
+ * const color1 = hex2rgb('#123');
+ * // rgb(17 34 51)
+ * ```
  *
  * @param {string} hexString Hexadecimal color string, can start with '#'
  * @param {object} [options] Object for format settings
  * @param {boolean} [options.CSSColorsLevel3=false] Use CSS Colors Level 3 functional notation (old one)
  * @param {boolean} [options.percent=false] Use percentage values
- * @return {string} The rgb value of the color in the form of rgb(r g b[ / a]); rgb[a](r, g, b[, a]) if CSS Colors Level 3
+ * @return {string} The rgb value of the color in the form of `rgb(r g b[ / a])`; `rgb[a](r, g, b[, a])` if CSS Colors Level 3
  */
 export const hex2rgb = (hexString, { CSSColorsLevel3, percent } = { CSSColorsLevel3: false, percent: false }) => {
 	// Remove '#' if present
