@@ -1,6 +1,6 @@
 {
   "name": "@csscolor/hex2rgb",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Converts hex colors to rgb",
   "main": "index.js",
   "type": "module",
