@@ -18,6 +18,17 @@ const render2hex = (red, green, blue, alpha) => `#${parseColorChanel(red)}${pars
 /**
  * Convert rgb[a] values to hex[a]
  *
+ * @example
+ * ```js
+ * import { rgb2hex } from '@csscolor/rgb2hex';
+ *
+ * console.log(
+ *   'Three values:',
+ *   rgb2hex(17, 34, 51)
+ * );
+ * // #112233
+ * ```
+ *
  * @param  {(number|string)} redOrRgbFnc The red color part or the `rgb()` function representation
  * @param  {number} green The green color part
  * @param  {number} blue The blue color part
