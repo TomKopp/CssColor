@@ -53,7 +53,7 @@ const render = ([
  */
 export const hex2rgb = (hexString, { CSSColorsLevel3, percent } = { CSSColorsLevel3: false, percent: false }) => {
 	// Remove '#' if present
-	const hex = hexString.startsWith('#') && hexString.slice(1);
+	const hex = hexString.startsWith('#') ? hexString.slice(1) : hexString;
 	const alphaPos = 3;
 	let arr = hex2numArr(hex);
 
