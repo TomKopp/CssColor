@@ -4,7 +4,7 @@ import { mapValueRange } from '@witzbould/utils-map-value-range';
  * Converts 3-4 digit hex string to array of bytes
  *
  * @param {string} str Hex string
- * @return {number[]} Array of chanels in bytes
+ * @return {number[]} Array of channels in bytes
  */
 const shortHex2numArr = (str) => {
 	const arr = [];
@@ -18,7 +18,7 @@ const shortHex2numArr = (str) => {
  * Converts 6-8 digit hex string to array of bytes
  *
  * @param {string} str Hex string
- * @return {number[]} Array of chanels in bytes
+ * @return {number[]} Array of channels in bytes
  */
 const longHex2numArr = (str) => {
 	const arr = [];

@@ -10,13 +10,13 @@ Color channel values can also be returned as percentages via option.
 
 ## Usage
 
-First install the package with your favourite package manager, shown here with npm:
+First install the package with your favorite package manager, shown here with npm:
 
 ```shell
 npm i @csscolor/hex2rgb
 ```
 
-Then import the packge where you want to use it.
+Then import the package where you want to use it.
 There is only one named export `hex2rgb`.
 
 ```js
