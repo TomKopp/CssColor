@@ -9,12 +9,14 @@ importers:
       eslint: 7.11.0
       eslint-plugin-import: 2.22.1_eslint@7.11.0
       eslint-plugin-jsdoc: 30.6.4_eslint@7.11.0
+      standard-version: 9.0.0
     specifiers:
       '@witzbould/utils-map-value-range': ^1.0.0
       babel-eslint: ^10.1.0
       eslint: ^7.11.0
       eslint-plugin-import: ^2.22.1
       eslint-plugin-jsdoc: ^30.6.4
+      standard-version: ^9.0.0
   packages/rgb2hex:
     dependencies:
       '@witzbould/utils-clamp-value': 1.0.0
