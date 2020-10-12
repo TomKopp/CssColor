@@ -3,6 +3,9 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
+  "scripts": {
+    "release": "pnpm run --filter=@csscolor/* --workspace-concurrency=1 release '--' '--first-release'"
+  },
   "keywords": [
     "color",
     "convert",
@@ -11,12 +14,6 @@
   ],
   "author": "Tom Kopp",
   "license": "ISC",
-  "devDependencies": {
-    "babel-eslint": "^10.1.0",
-    "eslint": "^7.11.0",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-jsdoc": "^30.6.4"
-  },
   "description": "Convert color from one space to another",
   "repository": {
     "type": "git",
