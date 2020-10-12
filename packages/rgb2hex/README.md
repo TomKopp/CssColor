@@ -4,13 +4,13 @@ CssColor rgb2hex converts css colors from rgb function notation to hex represent
 
 ## Usage
 
-First install the package with your favourite package manager, shown here with npm:
+First install the package with your favorite package manager, shown here with npm:
 
 ```shell
 npm i @csscolor/rgb2hex
 ```
 
-Then import the packge where you want to use it.
+Then import the package where you want to use it.
 There is only one named export `rgb2hex`.
 
 ```js
