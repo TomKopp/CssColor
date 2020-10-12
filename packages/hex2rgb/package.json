@@ -5,6 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "release": "standard-version",
     "test": "eslint -f=table \"*.js\""
   },
   "keywords": [
@@ -19,7 +20,8 @@
     "babel-eslint": "^10.1.0",
     "eslint": "^7.11.0",
     "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-jsdoc": "^30.6.4"
+    "eslint-plugin-jsdoc": "^30.6.4",
+    "standard-version": "^9.0.0"
   },
   "dependencies": {
     "@witzbould/utils-map-value-range": "^1.0.0"
