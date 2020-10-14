@@ -4,7 +4,8 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "release": "pnpm run --filter=@csscolor/* --workspace-concurrency=1 release '--' '--first-release'"
+    "release": "pnpm run --filter=@csscolor/* --workspace-concurrency=1 release '--' '--first-release'",
+    "postrelease": "git push --follow-tags origin master"
   },
   "keywords": [
     "color",
