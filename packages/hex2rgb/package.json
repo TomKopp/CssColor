@@ -5,8 +5,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "lint": "eslint -f=table \"*.js\"",
     "release": "standard-version",
-    "test": "eslint -f=table \"*.js\""
+    "test": "mocha"
   },
   "keywords": [
     "color",
@@ -21,6 +22,8 @@
     "eslint": "^7.11.0",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-jsdoc": "^30.6.4",
+    "eslint-plugin-mocha": "^8.0.0",
+    "mocha": "^8.1.3",
     "standard-version": "^9.0.0"
   },
   "dependencies": {
