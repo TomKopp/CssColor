@@ -26,5 +26,11 @@
   "scripts": {
     "lint": "eslint -f=table \"packages/**/*.js\"",
     "test": "npm run test --ws"
+  },
+  "devDependencies": {
+    "eslint": "8.56.0",
+    "eslint-formatter-table": "7.32.1",
+    "eslint-plugin-jsdoc": "48.0.4",
+    "eslint-plugin-mocha": "10.2.0"
   }
 }
