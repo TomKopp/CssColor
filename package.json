@@ -3,10 +3,6 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "scripts": {
-    "release": "pnpm run --filter=@csscolor/* --workspace-concurrency=1 release '--' '--first-release'",
-    "postrelease": "git push --follow-tags origin master"
-  },
   "keywords": [
     "color",
     "convert",
@@ -23,5 +19,12 @@
   "bugs": {
     "url": "https://github.com/witzbould/CssColor/issues"
   },
-  "homepage": "https://github.com/witzbould/CssColor#readme"
+  "homepage": "https://github.com/witzbould/CssColor#readme",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "lint": "eslint -f=table \"packages/**/*.js\"",
+    "test": "npm run test --ws"
+  }
 }
