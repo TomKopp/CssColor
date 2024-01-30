@@ -1,16 +1,19 @@
 {
   "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json",
-  "release-type": "node",
   "packages": {
     "packages/hex2rgb": {
       "component": "@csscolor/hex2rgb",
       "include-v-in-tag": false,
-      "tag-separator": "@"
+      "tag-separator": "@",
+      "release-type": "node",
+      "pull-request-header": ":robot: A release was created for ${component}"
     },
     "packages/rgb2hex": {
       "component": "@csscolor/rgb2hex",
       "include-v-in-tag": false,
-      "tag-separator": "@"
+      "tag-separator": "@",
+      "release-type": "node",
+      "pull-request-header": ":robot: A release was created for ${component}"
     }
   }
 }
