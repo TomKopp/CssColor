@@ -33,7 +33,7 @@ const render2hex = (red, green, blue, alpha) => `#${parseColorChanel(red)}${pars
  * @param  {number} green The green color part
  * @param  {number} blue The blue color part
  * @param  {number} [alpha] The opacity between 0 and 1
- * @return {string} The hex value of the color in the form of #RRGGBB[AA]
+ * @returns {string} The hex value of the color in the form of #RRGGBB[AA]
  */
 export function rgb2hex(redOrRgbFnc, green, blue, alpha) {
 	return arguments.length === 1 ? render2hex(...parseRgbFnc(redOrRgbFnc)) : render2hex(redOrRgbFnc, green, blue, alpha);
