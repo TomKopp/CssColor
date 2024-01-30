@@ -1,0 +1,7 @@
+{
+    "conventionalCommits.gitmoji": false,
+    "conventionalCommits.scopes": [
+        "hex2rgb",
+        "rgb2hex"
+    ],
+}
