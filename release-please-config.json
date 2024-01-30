@@ -1,9 +1,16 @@
 {
   "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json",
-  "bootstrap-sha": "e3b6fcf20d41f474f99ed0a5fce6688213b5db9a",
   "release-type": "node",
   "packages": {
-    "packages/hex2rgb": {},
-    "packages/rgb2hex": {}
+    "packages/hex2rgb": {
+      "component": "@csscolor/hex2rgb",
+      "include-v-in-tag": false,
+      "tag-separator": "@"
+    },
+    "packages/rgb2hex": {
+      "component": "@csscolor/rgb2hex",
+      "include-v-in-tag": false,
+      "tag-separator": "@"
+    }
   }
 }
