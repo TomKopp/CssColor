@@ -1,4 +1,5 @@
 {
   "packages/hex2rgb": "1.0.3",
-  "packages/rgb2hex": "1.0.3"
+  "packages/rgb2hex": "1.0.3",
+  ".": "0.0.0"
 }

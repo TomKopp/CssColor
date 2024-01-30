@@ -4,6 +4,13 @@
   "release-type": "node",
   "packages": {
     "packages/hex2rgb": {},
-    "packages/rgb2hex": {}
+    "packages/rgb2hex": {},
+    ".": {
+      "changelog-path": "CHANGELOG.md",
+      "bump-minor-pre-major": false,
+      "bump-patch-for-minor-pre-major": false,
+      "draft": false,
+      "prerelease": false
+    }
   }
 }
