@@ -14,7 +14,7 @@
   "description": "Convert color from one space to another",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/witzbould/CssColor.git"
+    "url": "https://github.com/witzbould/CssColor.git"
   },
   "bugs": {
     "url": "https://github.com/witzbould/CssColor/issues"
