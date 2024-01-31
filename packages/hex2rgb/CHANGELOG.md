@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.0.5](https://github.com/TomKopp/CssColor/compare/@csscolor/hex2rgb@1.0.4...@csscolor/hex2rgb@1.0.5) (2024-01-31)
+
+
+### Bug Fixes
+
+* **hex2rgb:** use correct package urls ([ef0b268](https://github.com/TomKopp/CssColor/commit/ef0b26801871e8e6bc334e9872083b543bedd7fd))
+* **hex2rgb:** use even more correct package urls ([1973663](https://github.com/TomKopp/CssColor/commit/19736633a45bac51ee26f4c7b91abd6aaa45f981))
+
 ## [1.0.4](https://github.com/TomKopp/CssColor/compare/@csscolor/hex2rgb@1.0.3...@csscolor/hex2rgb@1.0.4) (2024-01-31)
 
 
