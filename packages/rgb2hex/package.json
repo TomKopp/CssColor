@@ -28,10 +28,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/witzbould/CssColor.git"
+    "url": "https://github.com/witzbould/CssColor.git",
+    "directory": "packages/rgb2hex"
   },
   "bugs": {
-    "url": "https://github.com/witzbould/CssColor/issues"
+    "url": "https://github.com/TomKopp/CssColor/issues"
   },
-  "homepage": "https://github.com/witzbould/CssColor#readme"
+  "homepage": "https://github.com/TomKopp/CssColor/blob/master/packages/rgb2hex/README.md"
 }
