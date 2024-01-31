@@ -1,5 +1,0 @@
-{
-	"path": ".",
-	"tagPrefix": "@csscolor/hex2rgb@",
-	"releaseCommitMessageFormat": "chore(hex2rgb): release v{{currentTag}}"
-}
