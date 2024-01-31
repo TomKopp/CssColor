@@ -19,6 +19,7 @@ jobs:
     - uses: actions/setup-node@v4
       with:
         node-version: ${{ matrix.node-version }}
+        cache: 'npm'
     - run: npm ci
     - run: npm run lint
     - run: npm test --workspaces
@@ -32,11 +33,46 @@ jobs:
       pull-requests: write
     steps:
     - uses: actions/checkout@v4
-    - uses: google-github-actions/release-please-action@v4
-      with:
-        # Use GitHub Actions secret with a Personal Access Token as all
-        # resources created by release-please (release tag or release pull
-        # request) will not trigger future GitHub actions workflows, and
-        # workflows normally triggered by release.created events will also
-        # not run when used with the default GITHUB_TOKEN.
-        token: ${{ secrets.Automation }}
+    - id: release-please
+      uses: google-github-actions/release-please-action@v4
+    outputs:
+      releases_created: ${{ steps.release-please.outputs.releases_created }}
+
+  publish-gpr:
+    needs: release
+    if: ${{ needs.release.outputs.releases_created }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20.x
+          cache: 'npm'
+          registry-url: https://npm.pkg.github.com
+          scope: '@csscolor'
+          always-auth: true
+      - run: npm ci
+      - run: npm publish --workspaces --access public
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
+  publish-npm:
+    needs: release
+    if: ${{ needs.release.outputs.releases_created }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20.x
+          cache: 'npm'
+          registry-url: https://registry.npmjs.org
+          scope: '@csscolor'
+          always-auth: true
+      - run: npm ci
+      - run: npm publish --workspaces --access public
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}

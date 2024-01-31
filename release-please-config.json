@@ -1,19 +1,18 @@
 {
   "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json",
+  "release-type": "node",
+  "pull-request-header": ":robot: An automated release was created",
+  "pull-request-footer": "This PR was generated with [Release Please](https://github.com/googleapis/release-please).",
   "packages": {
     "packages/hex2rgb": {
       "component": "@csscolor/hex2rgb",
       "include-v-in-tag": false,
-      "tag-separator": "@",
-      "release-type": "node",
-      "pull-request-header": ":robot: A release was created for ${component}"
+      "tag-separator": "@"
     },
     "packages/rgb2hex": {
       "component": "@csscolor/rgb2hex",
       "include-v-in-tag": false,
-      "tag-separator": "@",
-      "release-type": "node",
-      "pull-request-header": ":robot: A release was created for ${component}"
+      "tag-separator": "@"
     }
   }
 }
