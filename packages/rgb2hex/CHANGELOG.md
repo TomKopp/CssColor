@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.0.5](https://github.com/TomKopp/CssColor/compare/@csscolor/rgb2hex@1.0.4...@csscolor/rgb2hex@1.0.5) (2024-01-31)
+
+
+### Bug Fixes
+
+* **rgb2hex:** use correct package urls ([439288b](https://github.com/TomKopp/CssColor/commit/439288b50f11b970bbdd003b18e17b04aee25dab))
+* **rgb2hex:** use even more correct package urls ([92a9fa5](https://github.com/TomKopp/CssColor/commit/92a9fa5879f85f4305da8e31dbbe4c15f024c810))
+
 ## [1.0.4](https://github.com/TomKopp/CssColor/compare/@csscolor/rgb2hex@1.0.3...@csscolor/rgb2hex@1.0.4) (2024-01-31)
 
 
