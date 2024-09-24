@@ -45,7 +45,6 @@ jobs:
     permissions:
       contents: read
       packages: write
-      id-token: write
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -53,7 +52,7 @@ jobs:
           node-version: 20.x
           cache: 'npm'
           registry-url: https://npm.pkg.github.com
-          scope: '@csscolor'
+          # scope: '@csscolor'
           always-auth: true
       - run: npm run --workspaces publish-npm
         env:
