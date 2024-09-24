@@ -4,4 +4,7 @@
         "hex2rgb",
         "rgb2hex"
     ],
+    "cSpell.words": [
+        "csscolor"
+    ],
 }
