@@ -5,8 +5,12 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "publish-npm": "npm view \"$npm_package_name@$npm_package_version\" >/dev/null 2>/dev/null && echo \"$npm_package_name@$npm_package_version exists!\" || npm publish --access public"
   },
+  "files": [
+    "index.js"
+  ],
   "keywords": [
     "color",
     "convert",
@@ -19,12 +23,12 @@
   "author": "Tom Kopp",
   "license": "ISC",
   "devDependencies": {
-    "mocha": "10.2.0"
+    "mocha": "10.7.3"
   },
   "dependencies": {
-    "@witzbould/utils-clamp-value": "1.0.0",
-    "@witzbould/utils-map-value-range": "1.0.0",
-    "@witzbould/utils-number2hex": "1.0.0"
+    "@witzbould/utils-clamp-value": "2.2.2",
+    "@witzbould/utils-map-value-range": "2.2.2",
+    "@witzbould/utils-number2hex": "2.2.2"
   },
   "repository": {
     "type": "git",
