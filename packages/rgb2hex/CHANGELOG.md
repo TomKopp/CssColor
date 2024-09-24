@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/TomKopp/CssColor/compare/@csscolor/rgb2hex@1.0.5...@csscolor/rgb2hex@1.1.0) (2024-09-24)
+
+
+### Miscellaneous Chores
+
+* release 1.1.0 ([844d07b](https://github.com/TomKopp/CssColor/commit/844d07b82cc6922caf9a1f25578f182ca45c31b3))
+
 ## [1.0.5](https://github.com/TomKopp/CssColor/compare/@csscolor/rgb2hex@1.0.4...@csscolor/rgb2hex@1.0.5) (2024-01-31)
 
 
