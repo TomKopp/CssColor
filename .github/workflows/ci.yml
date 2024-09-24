@@ -1,4 +1,4 @@
-name: Node.js Release
+name: CI Workflow
 
 on:
   push:
@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [18.x, 20.x, 21.x]
+        node-version: [18.x, 20.x, 22.x]
     name: Node ${{ matrix.node-version }}
     steps:
     - uses: actions/checkout@v4
@@ -54,8 +54,7 @@ jobs:
           registry-url: https://npm.pkg.github.com
           scope: '@csscolor'
           always-auth: true
-      - run: npm ci
-      - run: npm publish --workspaces --access public
+      - run: npm run --workspaces publish-npm
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
@@ -72,7 +71,6 @@ jobs:
           registry-url: https://registry.npmjs.org
           scope: '@csscolor'
           always-auth: true
-      - run: npm ci
-      - run: npm publish --workspaces --access public
+      - run: npm run --workspaces publish-npm
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
